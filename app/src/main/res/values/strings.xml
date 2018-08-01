@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Japanese Vocabularies</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="dictionary_search_box_hint">คำศัพท์</string>
+    <string name="dictionary_string">Dictionary</string>
+    <string name="tag_list_string">Tag List</string>
+    <string name="vocabulary_thai">คำศัพท์</string>
+    <string name="reading_thai">คำอ่าน</string>
+    <string name="meaning_thai">ความหมาย</string>
+    <string name="type_thai">ประเภท</string>
+    <string name="tag_name_thai">ชื่อแท็ก</string>
+    <string name="tag_description_thai">คำอธิบายแท็ก</string>
+    <string name="save_thai">บันทึก</string>
+    <string name="clear_value_thai">ล้างค่า</string>
+    <string name="add_tag_to_word_thai">แท็กคำศัพท์</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

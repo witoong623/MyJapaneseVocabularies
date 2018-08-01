@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:startDestination="@id/dictionaryFragment">
+    <fragment
+        android:id="@+id/dictionaryFragment"
+        android:name="net.aliveplex.witoong623.myjapanesevocabularies.fragments.DictionaryFragment"
+        android:label="Dictionary"
+        tools:layout="@layout/fragment_dictionary" >
+        <action
+            android:id="@+id/dictionary_to_vacabularydetail"
+            app:destination="@id/vocabularydetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vocabularydetailFragment"
+        android:name="net.aliveplex.witoong623.myjapanesevocabularies.fragments.VocabularyDetailFragment"
+        android:label="dictionary_fragment"
+        tools:layout="@layout/fragment_vocabulary_detail">
+        <argument android:name="vocabularyId" android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/taglistFragment"
+        android:name="net.aliveplex.witoong623.myjapanesevocabularies.fragments.TagListFragment"
+        android:label="Tags Manager"
+        tools:layout="@layout/fragment_tag_list">
+        <action
+            android:id="@+id/taglist_to_addtag"
+            app:destination="@id/addtagFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addtagFragment"
+        android:name="net.aliveplex.witoong623.myjapanesevocabularies.fragments.AddTagFragment"
+        android:label="add_tag_fragment"
+        tools:layout="@layout/fragment_add_tag">
+    </fragment>
+</navigation>

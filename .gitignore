@@ -1,0 +1,14 @@
+*.iml
+.gradle
+logErrors.txt
+logs.txt
+/local.properties
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+# jtdic database
+/app/src/main/assets/databases/jtdicdb.db
