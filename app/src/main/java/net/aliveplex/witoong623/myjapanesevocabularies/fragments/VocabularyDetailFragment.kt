@@ -16,6 +16,7 @@ import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.fragment_vocabulary_detail.*
 
 import net.aliveplex.witoong623.myjapanesevocabularies.R
+import net.aliveplex.witoong623.myjapanesevocabularies.VOCABULARY_ID
 import net.aliveplex.witoong623.myjapanesevocabularies.adapters.VocabularyTagAdapter
 import net.aliveplex.witoong623.myjapanesevocabularies.viewmodels.VocabularyDetailViewModel
 
@@ -35,7 +36,7 @@ class VocabularyDetailFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(VocabularyDetailViewModel::class.java)
-        val vocabularyId = arguments!!.getInt("vocabularyId")
+        val vocabularyId = arguments!!.getInt(VOCABULARY_ID)
         viewModel.vocabulary.observe(this, Observer { v ->
             vocab.text = v?.vocab
             reading_detail.text = v?.reading

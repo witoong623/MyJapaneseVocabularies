@@ -23,6 +23,7 @@ import net.aliveplex.witoong623.myjapanesevocabularies.listeners.RecyclerTouchLi
 import android.text.Editable
 import android.text.TextWatcher
 import androidx.navigation.findNavController
+import net.aliveplex.witoong623.myjapanesevocabularies.VOCABULARY_ID
 import net.aliveplex.witoong623.myjapanesevocabularies.utils.hideKeyboard
 import net.aliveplex.witoong623.myjapanesevocabularies.utils.isJapanese
 import net.aliveplex.witoong623.myjapanesevocabularies.viewmodels.DictionaryViewModel
@@ -65,7 +66,7 @@ class DictionaryFragment : Fragment() {
                 val itemId = viewAdapter.getItemId(position)
                 val bundle = Bundle()
                 hideKeyboard(activity!!)
-                bundle.putInt("vocabularyId", itemId.toInt())
+                bundle.putInt(VOCABULARY_ID, itemId.toInt())
                 view.findNavController().navigate(R.id.dictionary_to_vacabularydetail, bundle)
             }
 
