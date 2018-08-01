@@ -31,7 +31,7 @@
     <fragment
         android:id="@+id/addtagFragment"
         android:name="net.aliveplex.witoong623.myjapanesevocabularies.fragments.AddTagFragment"
-        android:label="add_tag_fragment"
+        android:label="Add Tag"
         tools:layout="@layout/fragment_add_tag">
     </fragment>
 </navigation>
